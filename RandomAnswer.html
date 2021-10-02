@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="Style.css">
+<script src="Script.js"></script>
+
+<body>
+    <form>
+        <h2>สุ่มคำตอบ 4 หลัก จาก A-Z</h2>
+        <input id="ran" style="text-transform:uppercase" type="text" maxlength="4" onfocus="this.value=''" onkeypress="return (event.charCode > 64 && 
+            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" />
+        <button id="submit" type="button" onclick="myFunction()">Submit</button>
+
+        <br><br>
+
+        <table id="myTable">
+            <tr>
+                <th>คำตอบ</th>
+                <th>สุ่ม</th>
+                <th>ถูก/ทั้งหมด</th>
+                <th>ถูก/ตำแหน่ง</th>
+                <th>ครั้งที่</th>
+            </tr>
+        </table>
+
+        <h3 id="total"></h3>
+    </form>
+
+</body>
+
+</html>
